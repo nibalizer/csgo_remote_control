@@ -13,7 +13,7 @@ endl = "\n"
 
 
 def run(command):
-    tn.write("echo " + command + endl)
+    tn.write("echo Remote Command: " + command + endl)
     tn.write(command + endl)
     sleep(1.0)
 
