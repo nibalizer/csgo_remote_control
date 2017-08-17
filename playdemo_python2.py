@@ -14,6 +14,7 @@ endl = "\n"
 
 def run(command):
     tn.write(command + endl )
+    sleep(1.0)
 
 
 tn = telnetlib.Telnet(HOST, PORT)
@@ -22,7 +23,7 @@ tn.write("echo " + welcome + endl)
 tn.read_until("Online")
 print("Successfully Connected")
 
-run("echo gg wp")
 
+run("demo_timescale 4.0")
 run("playdemo C:\Users\csgo2\Desktop\cloud9-vs-renegades-train.dem")
 
