@@ -13,7 +13,8 @@ endl = "\n"
 
 
 def run(command):
-    tn.write(command + endl )
+    tn.write("echo " + command + endl)
+    tn.write(command + endl)
     sleep(1.0)
 
 
@@ -25,5 +26,5 @@ print("Successfully Connected")
 
 
 run("demo_timescale 4.0")
-run("playdemo C:\Users\csgo2\Desktop\cloud9-vs-renegades-train.dem")
+run("playdemo really_short.dem; exit")
 
